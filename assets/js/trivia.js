@@ -48,7 +48,7 @@ $(document).ready(function() {
         choices: ['The Intern', 'Meet the Parents', 'Meet the Fockers', 'Silver Linings Playbook'],
         correctAnswer: 'Meet the Parents',
         videoLink: 'http://www.youtube.com/embed/FXI21S4ZWJU?autoplay=1&start=0&end=13&controls=0&modestbranding=1&showinfo=0&rel=0',
-        videoLength: 15000,
+        videoLength: 13500,
     };
     questions[3] = {
         question: "That's what I love about these high school girls man. I get older, they stay the same age.",
@@ -113,7 +113,7 @@ $(document).ready(function() {
         correctAnswers++;
 
         $('#choices').empty();
-        $('#question').html('<h2 class="red">Correct! The move is ' + questions[questionNumber].correctAnswer + '<div id="video"></div>');
+        $('#question').html('<h2 class="red">Correct! The movie is ' + questions[questionNumber].correctAnswer + '<div id="video"></div>');
 
         playVideo();
 
@@ -125,7 +125,7 @@ $(document).ready(function() {
         wrongAnswers++;
 
         $('#choices').empty();
-        $('#question').html('<h2>Wrong! The move is ' + questions[questionNumber].correctAnswer + '</h2><div id="video"></div>');
+        $('#question').html('<h2>Wrong! The movie is ' + questions[questionNumber].correctAnswer + '</h2><div id="video"></div>');
         playVideo();
 
         questionNumber++;
@@ -137,7 +137,7 @@ $(document).ready(function() {
         wrongAnswers++;
 
         $('#choices').empty();
-        $('#question').html('<h2>You ran out of time! The move is ' + questions[questionNumber].correctAnswer + '<div id="video"></div>');
+        $('#question').html('<h2>You ran out of time! The movie is ' + questions[questionNumber].correctAnswer + '<div id="video"></div>');
         playVideo();
 
         questionNumber++;
